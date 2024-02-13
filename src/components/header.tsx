@@ -1,10 +1,4 @@
-import {
-  ActivityIndicator,
-  Image,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 
@@ -23,7 +17,7 @@ export function Header({ title, cartQuantityItems = 0 }: HeaderProps) {
 
       {cartQuantityItems > 0 && (
         <TouchableOpacity className="relative" activeOpacity={0.7}>
-          <View className="w-4 h-4 bg-lime-300 rounded-full justify-center items-center top-2 z-10 -right-3.5">
+          <View className="w-4 h-4 bg-lime-700 rounded-full justify-center items-center top-2 z-10 -right-3.5">
             <Text className="text-xs font-bold text-slate-900">
               {cartQuantityItems}
             </Text>
