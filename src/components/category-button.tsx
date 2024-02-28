@@ -15,7 +15,7 @@ export function CategoryButton({
     <Pressable
       className={clsx(
         "bg-slate-800 px-4 justify-center rounded-md h-10",
-        isSelected && "border-2 border-lime-700"
+        isSelected && "border-2 border-lime-500"
       )}
       {...rest}
     >
